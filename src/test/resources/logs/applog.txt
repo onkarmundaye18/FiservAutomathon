@@ -1,0 +1,6 @@
+INFO    2019-03-25 00:42:34,956 [main] framework.driver.TestFixtures  - Config properties file loaded
+INFO    2019-03-25 00:42:38,805 [TestNG-tests-1] framework.driver.TestFixtures  - Driver Initialized !!!
+INFO    2019-03-25 00:42:44,199 [TestNG-tests-1] framework.driver.TestFixtures  - Test Execution Completed !!!
+INFO    2019-03-25 00:42:44,200 [TestNG-tests-1] framework.driver.TestFixtures  - doLoginAndVerifyHomePage
+INFO    2019-03-25 00:42:46,340 [TestNG-tests-1] framework.driver.TestFixtures  - Driver Initialized !!!
+INFO    2019-03-25 00:42:53,567 [TestNG-tests-1] framework.driver.TestFixtures  - Test Execution Completed !!!
