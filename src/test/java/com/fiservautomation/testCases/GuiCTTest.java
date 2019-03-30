@@ -33,10 +33,11 @@ public class GuiCTTest extends TestFixtures {
        List<WebElement> nseGainersEle =  hackathonHomePage.getNscTopGainers();
         for (WebElement singleNse:nseGainersEle) {
             singleNse.getText().trim();
+            System.out.println("CTHackathon content:"+singleNse.getText().trim());
         }
         TopGainersPage topGainersPage = new TopGainersPage().open(Config.getProperty("topGainerURL"));
         DriverManager.getDriver().navigate().to("https://nseindia.com/live_market/dynaContent/live_analysis/top_gainers_losers.htm");
-
+        System.out.println("CTHackathon content:"+topGainersPage.getTopGainSymbol().getText());
 
     }
 
