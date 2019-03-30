@@ -12,7 +12,8 @@
 
 	<test name="Test1">
 		<classes>
-			<class name="com.fiservautomation.testCases.GuildTC" />
+			<!--<class name="com.fiservautomation.testCases.GuildTC" />-->
+			<class name="com.fiservautomation.testCases.GuiCTTest" />
 		</classes>
 	</test> <!-- Test -->
 	
