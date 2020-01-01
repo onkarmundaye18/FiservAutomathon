@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="tests">
+<suite name="Suite" parallel="methods">
 
 
 	<listeners>
@@ -12,8 +12,12 @@
 
 	<test name="Test1">
 		<classes>
-			<!--<class name="com.fiservautomation.testCases.GuildTC" />-->
-			<class name="com.fiservautomation.testCases.GuiCTTest" />
+			<class name="com.fiservautomation.testCases.GuildTC">
+			<methods>
+				<include name="checkLoginPageLanded"></include>
+				<include name="doLoginAndVerifyHomePage"></include>
+			</methods>
+			</class>
 		</classes>
 	</test> <!-- Test -->
 	

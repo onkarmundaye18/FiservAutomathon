@@ -15,17 +15,20 @@ public class GuildTC extends TestFixtures {
         logInfo("Launched Browser : " + Config.getProperty("browser"));
         GuildLoginPage guildLoginPage = new GuildLoginPage().open(Config.getProperty("guildUrl"));
         Assert.assertTrue(guildLoginPage.getLoginBtn().isDisplayed(), "LoginBtn is displayed");
-        //System.out.println("TC1");
+        logInfo("Done with TC1 ");
+        log.info("Done with TC1 ");
     }
 
     @Test
     public void doLoginAndVerifyHomePage() {
-        log.info("doLoginAndVerifyHomePage");
+        logInfo("doLoginAndVerifyHomePage");
         launchBrowser(Config.getProperty("browser"));
         logInfo("Launched Browser : " + Config.getProperty("browser"));
         GuildLoginPage guildLoginPage = new GuildLoginPage().open(Config.getProperty("guildUrl"));
         GuildHomePage guildHomePage = guildLoginPage.login(Config.getProperty("guildUsername"), Config.getProperty("guildPassword"));
         Assert.assertTrue(guildHomePage.getGuildLogo().isDisplayed(), "GuildLogo is displayed");
-        //System.out.println("TC2");
+        logInfo("Done with TC2 ");
+        log.info("Done with TC2 ");
+
     }
 }
